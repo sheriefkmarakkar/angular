@@ -1,0 +1,31 @@
+<p>view works!</p>
+Name : {{ name }} <br>
+Age : {{ age }} <br>
+Email : {{ email }} <br>
+Address : {{ address.houseNo }}, {{ address.street }}, {{ address.dist }} <br>
+Hobbies
+<ul>
+    <li *ngFor="let hb of hobbies; let i = index">{{ i+1 }} {{ hb }}  </li>
+</ul>
+<hr>
+
+<input type="button" name="btn1" value="Add Project" (click)="addProject()">
+
+<hr>
+<table border="2">
+    <thead>
+        <th>Sl. No.</th>
+        <th>Project Name</th>
+        <th>Duration </th>
+        <th>End Date </th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of projects; let i = index">
+            <td> {{ i+1 }} </td>
+            <td> {{ p.name }} </td>
+            <td> {{ p.duration }} </td>
+            <td> {{ p.endDate }} </td>
+        </tr>
+    </tbody>
+</table>
+

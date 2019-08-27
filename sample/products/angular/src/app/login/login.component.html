@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col s12 m6">
+        <div class="card ">
+            <div class="card-content ">
+                Username : <input type="text" name="uname" id="">
+                Password : <input type="text" name="pwd" id="">
+                <input type="button" value="Login" class="btn waves-effect waves-light"> <br/> <br/>
+                <a (click)="signUp()" style= "cursor: pointer"> Sign Up</a> <br/> <br/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col s12 m6">
+        <div class="card ">
+            <div class="card-content ">
+                Name : <input type="text" name="name" id="" [(ngModel)]="name">
+                <input type="button" value="show message" class="btn waves-effect waves-light" (click)="showMessage()"> <br/> <br/>
+                <p *ngIf="view"> Welcome {{ name }} </p>
+            </div>
+        </div>
+    </div>
+</div>
+<app-signup *ngIf="view"></app-signup>
+
+

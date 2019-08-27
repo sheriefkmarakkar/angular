@@ -1,0 +1,26 @@
+<!-- <div class="row">
+    <div class="col s12 m6">
+        <div class="card ">
+            <div class="card-content ">
+                Number 1 : <input type="number" name="no1" id="" [(ngModel)]="number1">
+                Number 2 : <input type="number" name="no2" id="" [(ngModel)]="number2">
+                <input type="button" value="Add" class="btn waves-effect waves-light" (click)="add()"> <br/> <br/>
+                <input type="button" value="Difference" class="btn waves-effect waves-light" (click)="diff()"> <br/> <br/>
+                <label for="" *ngIf="view"> Result: </label> {{ result }} 
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="row">
+    <div class="col s12 m6">
+        <div class="card ">
+            <div class="card-content ">
+                Mark : <input type="number" name="no1" id="" [(ngModel)]="mark">
+                <input type="button" value="Submit" class="btn waves-effect waves-light" (click)="resultDisplay()"> <br/> <br/>
+                <label for="" *ngIf="passed"> Result: {{ result }}  </label> 
+                <label for="" *ngIf="failed"> Result: {{ result }} </label>  
+            </div>
+        </div>
+    </div>
+</div>

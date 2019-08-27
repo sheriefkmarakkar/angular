@@ -1,0 +1,23 @@
+<p>data1 works!</p>
+<h1>Value from Service :{{val}}</h1>
+<table>
+    <tr>
+        <td>Number 1:</td>
+        <td><input type="text" name="n1" [(ngModel)]="n1"/></td>
+    </tr>
+    <tr>
+        <td>Number 2 :</td>
+        <td><input type="text" name="n2" [(ngModel)]="n2"/></td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="addition" (click)="addvalue(n1,n2)"/></td>
+        <td><input type="button" value="massage" (click)="message()"/></td>
+        <td><input type="button" value="massage" (click)="message1()"/></td>
+        <td><input type="button" value="from server" (click)="Show1()"/></td>
+
+    </tr>
+</table>
+<h1>Value from Service :{{result}}</h1>
+<h1>Value from Service :{{result1.name}}</h1>
+<h1>Value from Servicexcvxcv :{{m.msg}}</h1>
+
