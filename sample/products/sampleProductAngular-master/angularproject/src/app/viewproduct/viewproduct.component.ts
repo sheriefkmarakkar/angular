@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Router,ActivatedRoute} from '@angular/router'
 import { MessageService } from '../message.service';
-import { Router } from'@angular/router';
+
 @Component({
   selector: 'app-viewproduct',
   templateUrl: './viewproduct.component.html',
@@ -8,9 +9,15 @@ import { Router } from'@angular/router';
 })
 export class ViewproductComponent implements OnInit {
 
-  constructor(private ms: MessageService,private r : Router) {  }
+  constructor(private ms: MessageService,private r : Router,private ac:ActivatedRoute) {  }
 
   sdata;
+ id;
+  
+  edit()
+  {
+
+  }
   ngOnInit() {
     this.ms.getData().subscribe(data=>{
       this.sdata = data;

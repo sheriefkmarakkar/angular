@@ -10,7 +10,8 @@
                 <td>{{d.productId}}</td>
                 <td>{{d.productName}}</td>
                 <td>{{d.productPrice}}</td>
-            
+                <td><a [routerLink]="['/home/editproduct',{{d.productId}},{{d.productName}},{{d.productPrice}}]">Edit</a> </td>
+               
                
             </tr>
         </tbody>

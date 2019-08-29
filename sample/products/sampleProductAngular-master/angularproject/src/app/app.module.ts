@@ -16,6 +16,8 @@ import { DataComponent } from './data/data.component';
 
 import { CalcService } from './calc.service';
 import { MessageService } from './message.service';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 //import {StorageServiceModule} from 'angular-webstorage-service'
 
 @NgModule({
@@ -28,7 +30,9 @@ import { MessageService } from './message.service';
     ContactComponent,
     AboutComponent,
     HeaderComponent,
-    DataComponent
+    DataComponent,
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
